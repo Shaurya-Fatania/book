@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Bookstore - Desi Dollar Diaries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .banner {
+            background-color: #f39c12;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 20px 0;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .banner button {
+            padding: 15px 30px;
+            background-color: white;
+            color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .banner button:hover {
+            background-color: #f5b041;
+        }
+
+        .featured-books {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .book-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .book-card h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .book-card p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .book-card button {
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .book-card button:hover {
+            background-color: #27ae60;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bookstore</h1>
+        <p>Exclusive launch of the Desi Dollar Diaries coming soon!</p>
+    </header>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Books</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h2>Coming Soon: Desi Dollar Diaries</h2>
+        <p>Stay tuned for the upcoming release that unveils the truth about financial misconceptions.</p>
+        <button>Notify Me</button>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <div class="book-card">
+            <img src="https://via.placeholder.com/200x300" alt="Desi Dollar Diaries">
+            <h3>Desi Dollar Diaries</h3>
+            <p>Explore how financial misconceptions impact lives and discover a better approach to money.</p>
+            <button>Coming Soon</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Elite Bookstore. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('contact-link').addEventListener('click', function () {
+            window.location.href = "https://shaurya-fatania.github.io/contact/";
+        });
+
+        document.querySelector('.banner button').addEventListener('click', function () {
+            alert('You will be notified once Desi Dollar Diaries is available!');
+        });
+    </script>
+
+</body>
+
+</html>
